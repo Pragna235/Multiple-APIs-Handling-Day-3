@@ -1,0 +1,66 @@
+### File to be identified by the REST Client
+### get
+get http://localhost:4000/user-api/users
+
+### get individual user
+get http://localhost:4000/user-api/users/300
+
+### post
+post http://localhost:4000/user-api/user
+Content-Type: application/json
+
+{
+    "id":600,
+    "name":"Prachi"
+}
+
+### put
+put http://localhost:4000/user-api/user
+Content-Type: application/json
+
+{
+    "id":400,
+    "name":"Praveen Kumar"
+}
+
+### delete
+// if id is mentioned in the url itself
+delete http://localhost:4000/user-api/user/400
+
+### delete
+//delete http://localhost:4000/user
+//Content-Type: application/json
+
+//{
+ //   "id":300
+//}
+
+//-----------------------Products API -------------------
+### File to be identified by the REST Client
+### get
+get http://localhost:4000/product-api/products
+
+### get individual user
+get http://localhost:4000/product-api/products/300
+
+### post
+post http://localhost:4000/product-api/product
+Content-Type: application/json
+
+{
+    "id":400,
+    "name":"Nike"
+}
+
+### put
+put http://localhost:4000/product-api/product
+Content-Type: application/json
+
+{
+    "id":100,
+    "name":"Titan"
+}
+
+### delete
+// if id is mentioned in the url itself
+delete http://localhost:4000/product-api/product/400
